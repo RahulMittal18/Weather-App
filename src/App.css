@@ -70,15 +70,14 @@
 }
 
 .header{
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding: 10px;
 
 }
 
-/* .header h2{
-  display: inline;
-  margin-right: 50px;
-} */
+.header h2{
+  margin-top: 2px;
+}
 
 .heading{
   display: inline-block;
@@ -88,13 +87,13 @@
 .search{
   display: inline-block;
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 .mode{
   display: inline-block;
   position: absolute;
-  right: 100px;
+  right: 80px;
 }
 
 .btns-div{
@@ -125,6 +124,8 @@
 
 .form .btn{
   margin: 0px 10px;
+  outline: none;
+  border: none;
 }
 
 
@@ -167,6 +168,7 @@
 
 .whp{
   padding: 15px 0px 10px 0px;
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -201,7 +203,7 @@
   font-size: 1rem;
 }
 
-.hour{
+/* .hour{
   display: flex;
   flex-direction: row;
   
@@ -212,8 +214,35 @@
   width: 20%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .uv{
   margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .data{
+    /* width: 100%; */
+    padding: 0px 10px;
+  }
+
+  .whp .title{
+  font-size: 0.8rem;
+
+}
+
+.whp .data{
+  font-size: 1rem;
+  
+}
+
+.whp .data .unit{
+  font-size: 0.9rem;
+}
+
+.mode{
+  right: 60px;
+}
+
 }

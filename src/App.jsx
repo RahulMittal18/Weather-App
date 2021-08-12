@@ -71,7 +71,7 @@ function App() {
                   }}
                 />
                 <button className={isDarkMode? "btn dark btn-primary": "btn light btn-primary"} onClick={updatePlaceData}>
-                  Submit
+                  Search
                 </button>
               </div>
             ) : (
@@ -125,7 +125,7 @@ function App() {
                   <div className="temp">{placeData.current.temp_c}°</div>
                   <div className="desc">{placeData.current.condition.text}</div>
                   <div className="place">{placeData.location.name}</div>
-                  <div className="container">
+                  <div className="container data">
                     <div
                       className={
                         isDarkMode ? "row whp dark whp-1" : "row whp whp-1"
@@ -162,7 +162,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="container">
+                  <div className="container data">
                     <div
                       className={
                         isDarkMode ? "row whp dark whp-2" : "row whp whp-2"
